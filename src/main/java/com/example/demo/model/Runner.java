@@ -2,6 +2,8 @@ package com.example.demo.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
@@ -10,6 +12,7 @@ import javax.validation.constraints.Size;
 @Table(name="Runner")
 public class Runner {
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="ID_r")
 	private int ID_r;
 	
@@ -91,6 +94,12 @@ public class Runner {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	@Override
+	public String toString() {
+		return "Runner [name=" + name + ", surname=" + surname + ", sex=" + sex + ", password=" + password + ", email="
+				+ email + "]";
 	}
 	
 
