@@ -1,9 +1,9 @@
-package com.example.services;
+package com.example.demo.services;
 
 import java.sql.Time;
 import java.util.ArrayList;
 
-import com.example.model.Result;
+import com.example.demo.model.Result;
 
 public interface ResultService {
 	

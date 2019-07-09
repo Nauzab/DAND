@@ -1,10 +1,10 @@
-package com.example.repo;
+package com.example.demo.repo;
 
 import java.util.ArrayList;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.example.model.Result;
+import com.example.demo.model.Result;
 
 
 

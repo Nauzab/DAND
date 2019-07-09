@@ -1,11 +1,11 @@
-package com.example.services;
+package com.example.demo.services;
 
 import java.sql.Time;
 import java.util.ArrayList;
 
 import org.springframework.stereotype.Service;
 
-import com.example.model.Result;
+import com.example.demo.model.Result;
 
 @Service
 public class ResultServiceImp implements ResultService{
