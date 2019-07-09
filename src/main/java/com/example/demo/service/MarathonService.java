@@ -10,6 +10,6 @@ public interface MarathonService {
 	boolean insertNewMarathon(Marathon marathon);
 	boolean updateMarathonById(Marathon marathon, int id);
 	boolean deleteMarathonById(int id);
-	Marathon findByPlace(String place);
+	ArrayList<Marathon> findByPlace(String place);
 
 }
