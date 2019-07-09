@@ -41,7 +41,7 @@ public class MarathonController {
 	}
 	
 	@PostMapping(value = "/addmarathon") // after submit button pressed
-	public String addmarathonPost(@Valid Marathon marathon, BindingResult result) { // filled marathon object data
+	public String addmarathonPost(@Valid Marathon marathon, BindingResult result) // filled marathon object data
 	{
         if (result.hasErrors())
             return "addmarathon";
@@ -69,5 +69,4 @@ public class MarathonController {
 		marathonServiceImpl.deleteMarathonById(id);
 		return "redirect:/marathon/marathonview";
 	}
-}
 }

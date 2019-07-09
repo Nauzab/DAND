@@ -25,7 +25,7 @@ public class Marathon {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="Id_Gr")
+	@Column(name="Id_mar")
 	
 	private int id;
 	
